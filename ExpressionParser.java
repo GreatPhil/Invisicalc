@@ -163,7 +163,7 @@ public class ExpressionParser {
         }
       } else if (temp1.equals ("(")) {
         if (temp2.equals(")") ||
-            cw.isOperator(temp2))
+            cw.isOperator(temp2)) {
           return false;
         }
       } else {

@@ -152,7 +152,7 @@ public class Cellworker {
       GregorianCalendar nerf = new GregorianCalendar();
       if ((Integer.parseInt(m) % 2 == 1 && Integer.parseInt(d) < 32) ||
           (Integer.parseInt(m) == 2 && nerf.isLeapYear(Integer.parseInt(y)) && Integer.parseInt(d) < 30) ||
-          (Integer.parseInt(m) == 2 && !nerf.isLeapYear(Integer.parseInt(y)) &&bInteger.parseInt(d) < 29) ||
+          (Integer.parseInt(m) == 2 && !nerf.isLeapYear(Integer.parseInt(y)) && Integer.parseInt(d) < 29) ||
           (Integer.parseInt(m) % 2 == 0 && Integer.parseInt(d) < 31)) {
         return tf;
       }
@@ -480,7 +480,7 @@ public class Cellworker {
     while (bi.compareTo(new BigInteger("0")) == 1) { //greater than 0
       int rem = bi.remainder(n26).intValue();
       bi = bi.divide(n26);
-      
+
       if (rem == 0 ) {
         answer = "Z" + answer;
         bi = bi.subtract(new BigInteger("1"));
